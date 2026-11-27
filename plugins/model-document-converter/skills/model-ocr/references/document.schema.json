@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MODEL document content contract 2.0 (process metadata lives in LOG)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "source",
+    "coordinate_system",
+    "pages"
+  ],
+  "properties": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "filename",
+        "kind",
+        "page_count"
+      ],
+      "properties": {
+        "filename": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "pdf",
+            "image"
+          ]
+        },
+        "page_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "coordinate_system": {
+      "const": "normalized-displayed-cropbox-top-left-xyxy"
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "page_number",
+          "width_pt",
+          "height_pt",
+          "page_kind",
+          "blocks"
+        ],
+        "properties": {
+          "page_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "width_pt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "height_pt": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "page_kind": {
+            "enum": [
+              "text",
+              "mixed",
+              "image_only",
+              "blank"
+            ]
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "order",
+                "type",
+                "bbox",
+                "text"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^p[0-9]+-b[0-9]+$"
+                },
+                "order": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "type": {
+                  "enum": [
+                    "title",
+                    "paragraph",
+                    "table",
+                    "list",
+                    "equation",
+                    "signature",
+                    "signature_field",
+                    "stamp",
+                    "figure",
+                    "header",
+                    "footer",
+                    "handwriting",
+                    "logo",
+                    "unknown"
+                  ]
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "text": {
+                  "type": "string"
+                },
+                "visual_description": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "evidence_roles": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "facility_identity",
+                      "department",
+                      "facility_contact",
+                      "survey_invitation",
+                      "encounter_time",
+                      "creation_time",
+                      "print_time",
+                      "export_time",
+                      "signature_time",
+                      "author",
+                      "signatory",
+                      "professional_id",
+                      "patient_id",
+                      "document_id",
+                      "revision",
+                      "stamp_identity",
+                      "signature_state",
+                      "medical_result",
+                      "specimen_time",
+                      "other_evidence",
+                      "document_status",
+                      "facility_administration",
+                      "routine_media_instructions"
+                    ]
+                  },
+                  "uniqueItems": true
+                },
+                "lines": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "text",
+                      "bbox"
+                    ],
+                    "properties": {
+                      "text": {
+                        "type": "string"
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "items": {
+                          "type": "number",
+                          "minimum": 0,
+                          "maximum": 1
+                        },
+                        "minItems": 4,
+                        "maxItems": 4
+                      }
+                    }
+                  }
+                },
+                "table": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "rows",
+                    "columns",
+                    "cells"
+                  ],
+                  "properties": {
+                    "rows": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "columns": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "cells": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "required": [
+                          "row",
+                          "column",
+                          "text",
+                          "bbox"
+                        ],
+                        "properties": {
+                          "row": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "column": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "rowspan": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "colspan": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "header": {
+                            "type": "boolean"
+                          },
+                          "text": {
+                            "type": "string"
+                          },
+                          "bbox": {
+                            "type": "array",
+                            "items": {
+                              "type": "number",
+                              "minimum": 0,
+                              "maximum": 1
+                            },
+                            "minItems": 4,
+                            "maxItems": 4
+                          },
+                          "visual_description": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "type": {
+                        "const": "table"
+                      }
+                    }
+                  },
+                  "then": {
+                    "required": [
+                      "table"
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

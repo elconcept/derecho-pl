@@ -1,0 +1,6 @@
+interface:
+  display_name: "MODEL Konwerter"
+  short_description: "Wierny OCR, MD i JSON z geometrią źródła"
+  default_prompt: "Przetwórz załączony PDF lub obraz zgodnie z $model-ocr: zweryfikuj odczyt i geometrię, rozstrzygnij niepewności, zapisz bundle w Drive i dołącz ZIP."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,20 @@
+{
+  "name": "derecho-pl",
+  "interface": {
+    "displayName": "derecho-pl"
+  },
+  "plugins": [
+    {
+      "name": "model-document-converter",
+      "source": {
+        "source": "local",
+        "path": "./plugins/model-document-converter"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

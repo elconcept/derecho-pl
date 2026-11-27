@@ -1,0 +1,2 @@
+# Optional: used only when an actual embedded digital signature is present.
+pyHanko>=0.36.2,<1.0

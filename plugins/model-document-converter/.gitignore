@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+.DS_Store
+*.tmp
+
+/skills/model-ocr/assets/DejaVuSans.ttf

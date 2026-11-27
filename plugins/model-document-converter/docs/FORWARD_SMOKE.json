@@ -1,0 +1,358 @@
+{
+  "status": "complete_local_scope",
+  "contract": "0.2.0",
+  "content_contract": "model-document-2",
+  "validation": {
+    "current_content_validate": true,
+    "current_pdf_build": true,
+    "final_stage": true,
+    "final_seal": true,
+    "final_LOG_core_integrity": true,
+    "exact_5_zip_files": true,
+    "zip_crc_ok": true
+  },
+  "helper_sha256": {
+    "assemble_bundle.py": "4884330cefdd2d84973921067d33be560fbb78269d984ea79bcae5e52cd588a7",
+    "check_signatures.py": "4fca71720f40c19f44065cf8f646056ce981e99e5364b1294cbddc07cb070212",
+    "content_geometry.py": "919a6de43ca4902f7bf3127087a393766274899954feb1ad9a87dbc975ff18a3",
+    "pdf_pipeline.py": "fc0b3eddb8025e45eafca275d760bfd198a6a6ffcc7e926ede99b04a85d034f9"
+  },
+  "helpers_unchanged_during_final_stage_seal": true,
+  "pdf_helper_unchanged_since_build": true,
+  "source_sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba",
+  "approved_input_file_sha256": {
+    "document.json": "9250c1c5e09f02c7e1fcb42f493e9374d74e633478bb50f1e4bdf65e0fd6fdc6",
+    "layer-plan.json": "1cf2e475a29c80cdb6ba6abb330f25d710172465f98e13e5dfb8733bfda52b12",
+    "review.json": "f225a30081164628c246797cb49fc60aa6197d4d066a636795520a451cb0f389"
+  },
+  "migrated_inputs_unchanged_during_finalization": true,
+  "source_binding": {
+    "actual_kind": "pdf",
+    "binding": "byte_identical_pdf",
+    "frames": [],
+    "input_sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba",
+    "original_filename": "smoke_input.pdf",
+    "page_count": 2,
+    "pages": [
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "cropbox_position": [
+          0.0,
+          0.0
+        ],
+        "derotation_matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "display_rect": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "page": 1,
+        "pdf_transformation_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          842.0
+        ],
+        "rotation": 0,
+        "rotation_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "unrotated_rect": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ]
+      },
+      {
+        "cropbox": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "cropbox_position": [
+          0.0,
+          0.0
+        ],
+        "derotation_matrix": [
+          1.0,
+          -0.0,
+          -0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "display_rect": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "mediabox": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ],
+        "page": 2,
+        "pdf_transformation_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          -1.0,
+          0.0,
+          842.0
+        ],
+        "rotation": 0,
+        "rotation_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "unrotated_rect": [
+          0.0,
+          0.0,
+          595.0,
+          842.0
+        ]
+      }
+    ],
+    "source_sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba"
+  },
+  "signature_report": {
+    "schema_version": "model-signature-check-2",
+    "original_filename": "smoke_input.pdf",
+    "original_sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba",
+    "source_unchanged": true,
+    "source_kind": "pdf",
+    "status": "skipped",
+    "reason_code": "not_present",
+    "detection": {
+      "status": "not_present",
+      "count": 0,
+      "signatures": [],
+      "candidates": [],
+      "issues": [],
+      "empty_fields": 0,
+      "cryptographic_validity": "not_checked"
+    },
+    "enumeration_complete": true,
+    "cryptographic_validation_attempted": false,
+    "cryptographic_validation_completed": false,
+    "cryptographic_validation_performed": false,
+    "network_fetching": false,
+    "qualified_signature_status": "not_assessed",
+    "trust_context": {
+      "roots_supplied": 0,
+      "crls_supplied": 0,
+      "ocsps_supplied": 0,
+      "revocation_mode": "soft-fail",
+      "operating_system_roots_used": false
+    },
+    "signatures": [],
+    "notes": [
+      "No embedded signature; this is normal and is not a document defect."
+    ],
+    "validation_counts": {
+      "detected_candidates": 0,
+      "enumerated": 0,
+      "attempted": 0,
+      "completed": 0,
+      "performed": 0
+    }
+  },
+  "signature_report_present_in_LOG": true,
+  "content_geometry": {
+    "coordinate_system": "normalized-displayed-cropbox-top-left-xyxy",
+    "ok": true,
+    "pages": [
+      {
+        "mapping_sha256": "84fb0b646196bfeaefc66cb05c304613947d8fc92e5af91146ba841aa0165b1a",
+        "page": 1,
+        "representations": 24,
+        "table_grids_from_pdf_words": 1,
+        "unique_occurrences": true,
+        "words": 72
+      },
+      {
+        "mapping_sha256": "ce46e343b36c3db2ec447091d84cb8045877a28af1b26eba87d4d186bf822b4d",
+        "page": 2,
+        "representations": 26,
+        "table_grids_from_pdf_words": 0,
+        "unique_occurrences": true,
+        "words": 72
+      }
+    ],
+    "tolerance_pt": 2.0
+  },
+  "table_structure": {
+    "page": 1,
+    "rows": 3,
+    "columns": 4,
+    "cells": 12,
+    "grids_proved_from_actual_PDF_words": 1
+  },
+  "pdf_preservation": {
+    "source_sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba",
+    "output_sha256": "235404cb31a627fcbe3087d233ddd097b408a29819b827fb18a3bf0f10325384",
+    "line_geometry_compared_to_previously_reviewed_overlay": {
+      "lines": 42,
+      "maximum_bbox_delta_pt": 0.0
+    },
+    "chars_total": 1018,
+    "chars_outside_page": 0,
+    "search_checks": 62,
+    "all_search_checks_passed": true,
+    "visual_parity": [
+      {
+        "page": 1,
+        "equal": true,
+        "dpi": 192.0,
+        "pixels": [
+          1587,
+          2246
+        ]
+      },
+      {
+        "page": 2,
+        "equal": true,
+        "dpi": 192.0,
+        "pixels": [
+          1587,
+          2246
+        ]
+      }
+    ],
+    "image_preservation_exact": true,
+    "image_occurrences": [
+      [
+        {
+          "width": 2474,
+          "height": 3500,
+          "bbox": [
+            0.0,
+            0.1228638,
+            595.0,
+            841.8771362
+          ],
+          "bits_per_component": 8
+        }
+      ],
+      [
+        {
+          "width": 2474,
+          "height": 3500,
+          "bbox": [
+            0.0,
+            0.1228638,
+            595.0,
+            841.8771362
+          ],
+          "bits_per_component": 8
+        }
+      ]
+    ],
+    "size_diagnostics": {
+      "source_bytes": 1118423,
+      "output_bytes": 1165553,
+      "delta_bytes": 47130,
+      "source_font_bytes": 0,
+      "output_font_bytes": 15470,
+      "font_delta_bytes": 15470,
+      "other_delta_bytes": 31660,
+      "images_resampled": false,
+      "note": "File deltas also include object tables, text streams and compression; no claim of image recompression savings."
+    },
+    "font_size_range_pt": [
+      10.308724832214764,
+      13.85234899328859
+    ],
+    "horizontal_scale_range": [
+      0.8133034529026364,
+      0.9306536366268104
+    ]
+  },
+  "page_count": 2,
+  "block_count": 25,
+  "ocr_lines": 42,
+  "md_omissions": 5,
+  "markdown": {
+    "profile": "compact",
+    "old_characters": 1291,
+    "new_characters": 1132,
+    "characters_saved": 159,
+    "character_reduction_percent": 12.316,
+    "old_utf8_bytes": 1324,
+    "new_utf8_bytes": 1165,
+    "included_blocks_retained": 20,
+    "facts_checked": 14,
+    "all_facts_retained": true
+  },
+  "public_JSON_process_metadata_removed": true,
+  "zip_sha256": "e70469d50ab4d7b968b6d9d91d98ca2ddefbdd13e1acf5162b538446093170cd",
+  "zip_bytes": 1237319,
+  "files": [
+    {
+      "path": "LOG.md",
+      "bytes": 43006,
+      "sha256": "8b3710c49600363f5fe68887fd95f289b40c528bb52556b83ed5e23563833aac"
+    },
+    {
+      "path": "raw/smoke_input.pdf",
+      "bytes": 1118423,
+      "sha256": "ffd79a9b6fa774ea8573fccd51942b7596676c3d0868f7f570802d6d1f78caba"
+    },
+    {
+      "path": "smoke_input.json",
+      "bytes": 21525,
+      "sha256": "9250c1c5e09f02c7e1fcb42f493e9374d74e633478bb50f1e4bdf65e0fd6fdc6"
+    },
+    {
+      "path": "smoke_input.md",
+      "bytes": 1165,
+      "sha256": "a855b1f4079156d0f018517f8ba3fb4cbf35cfc1cb7a94795ec448a39643f3e4"
+    },
+    {
+      "path": "smoke_input_searchable.pdf",
+      "bytes": 1165553,
+      "sha256": "235404cb31a627fcbe3087d233ddd097b408a29819b827fb18a3bf0f10325384"
+    }
+  ],
+  "raw_byte_equal": true,
+  "external_writes": false,
+  "delivery_events": [],
+  "record_delivery_exercised": false,
+  "unresolved": [],
+  "scope_note": "Fresh corrected 0.2.0 build and final stage/seal on the previously visually approved synthetic source; no old pipeline or archived probes executed. These checks establish preservation and consistency, not a guarantee of MODEL reading accuracy.",
+  "execution_scope": "Existing approved synthetic transcription was migrated to the0.2.0 contract. Corrected build/stage/seal and source/geometry/LOG gates executed; old0.1.0 pipeline and archived audit probes were not run."
+}

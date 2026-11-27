@@ -1,0 +1,44 @@
+{
+  "artifact": "model-document-converter",
+  "version": "0.2.0",
+  "scope": "private_release",
+  "executed_at": "2026-11-27T02:24:58.578495+01:00",
+  "command": "python3 -B -m unittest discover -s tests -v",
+  "audit_policy": "All17 supplied findings accepted as confirmed. No0.1.0 reproduction scripts or baseline reruns were executed; tests run corrected code only.",
+  "environment": {
+    "python": "3.12.14",
+    "PyMuPDF": "1.26.6",
+    "Pillow": "13.0.0",
+    "pypdf": "6.21.4",
+    "jsonschema": "4.26.0",
+    "fonttools": "4.61.1",
+    "cryptography": "50.0.0"
+  },
+  "tests": {
+    "run": 83,
+    "passed": 83,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "success": true
+  },
+  "tested_files": {
+    "skills/model-ocr/references/document.schema.json": "cb831a38d5ac889fe08452cd1fe41e0abc936b8744bf2b19bb012c43b244fe5e",
+    "skills/model-ocr/scripts/assemble_bundle.py": "4884330cefdd2d84973921067d33be560fbb78269d984ea79bcae5e52cd588a7",
+    "skills/model-ocr/scripts/check_signatures.py": "4fca71720f40c19f44065cf8f646056ce981e99e5364b1294cbddc07cb070212",
+    "skills/model-ocr/scripts/content_geometry.py": "919a6de43ca4902f7bf3127087a393766274899954feb1ad9a87dbc975ff18a3",
+    "skills/model-ocr/scripts/pdf_pipeline.py": "fc0b3eddb8025e45eafca275d760bfd198a6a6ffcc7e926ede99b04a85d034f9",
+    "tests/pdf_fixtures.py": "b8b027bde43f96a1c1b355a7798e57300f43de2e7e0cdf52ef3427d479fe65b2",
+    "tests/test_audit_acceptance.py": "5e520a04d5befe2399177d1fdffb8c38acbef4570386c9e4b855ff80a8a04a84",
+    "tests/test_content_bundle.py": "d1b6a50116cd82d794e3fc6af99bf27f96ba4dbae4e71f20927c8d9af336a9ac",
+    "tests/test_pdf_audit_fixes.py": "d7d4f1d98b113deac51a1c1d02d4e7c26684f20524d3e0e460177b844c5f487b",
+    "tests/test_pdf_pipeline.py": "563619142940459176607b180d5d15c77a0417820c6aee83a3f757f0b72dce16",
+    "tests/test_signatures.py": "628e0c1952e5d570eaaeb6964789b4350a3430e1e159e6b229f0129b6b0a951c"
+  },
+  "limitations": [
+    "Mechanical synthetic fixtures do not establish perfect MODEL transcription on every document.",
+    "Actual pyHanko cryptography was not run; backend response handling uses explicit mocks where indicated.",
+    "No Google Drive bundle upload in the test suite.",
+    "GitHub remote creation and marketplace import are separate operations."
+  ]
+}

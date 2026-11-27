@@ -1,0 +1,22 @@
+{
+  "method": "Count Unicode characters, not tokens. Read audit HTML as immutable data; no0.1.0 renderer or reproduction executed. Final newline excluded from both rendered-table counts; original file count is separately recorded.",
+  "table": {
+    "rows": 101,
+    "columns": 4,
+    "old_html_characters": 6973,
+    "new_gfm_characters": 2934,
+    "saved_characters": 4039,
+    "reduction_percent": 57.92341890147712,
+    "all_cell_values_and_order_equal": true,
+    "old_file_characters": 6974
+  },
+  "page_markers": {
+    "filename": "syntetyczna_dokumentacja_placowki_z_dluga_nazwa_pliku.pdf",
+    "pages": 500,
+    "legacy_characters": 41391,
+    "compact_characters": 4465,
+    "saved_characters": 36926,
+    "reduction_percent": 89.2126307651422,
+    "every_source_page_referenced": true
+  }
+}

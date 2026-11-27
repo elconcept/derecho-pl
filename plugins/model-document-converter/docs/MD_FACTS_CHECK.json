@@ -1,0 +1,191 @@
+{
+  "comparison_scope": "Read existing approved Markdown and current 0.2.0 Markdown only; no old pipeline execution",
+  "old_characters": 1291,
+  "new_characters": 1132,
+  "characters_saved": 159,
+  "character_reduction_percent": 12.316,
+  "old_utf8_bytes": 1324,
+  "new_utf8_bytes": 1165,
+  "old_md_sha256": "926ba7281789672c861f3e8a6a65fd1c35eec634a66d8ad16b840689cbb6d93a",
+  "new_md_sha256": "a855b1f4079156d0f018517f8ba3fb4cbf35cfc1cb7a94795ec448a39643f3e4",
+  "facts_checklist": [
+    {
+      "fact": "Źródło i fizyczne strony",
+      "retained": true,
+      "detail": "Nazwa źródła raz; Strony: 2; [s. 1] i [s. 2]."
+    },
+    {
+      "fact": "Syntetyczny charakter źródła",
+      "retained": true,
+      "detail": "Pełny nagłówek na stronie 1; powtórzenie na stronie 2 pominięte zgodnie z zatwierdzonym review."
+    },
+    {
+      "fact": "Placówka i oddział",
+      "retained": true,
+      "detail": "Szpital Testowy, Oddział A na obu stronach."
+    },
+    {
+      "fact": "Data wizyty",
+      "retained": true,
+      "detail": "2024-02-03 08:15 na obu stronach."
+    },
+    {
+      "fact": "Data utworzenia",
+      "retained": true,
+      "detail": "2024-04-18 15:42 na obu stronach."
+    },
+    {
+      "fact": "Odrębne czasy wydruku",
+      "retained": true,
+      "detail": "Strona 1: 2024-04-19 09:07; strona 2: 2024-04-20 10:08."
+    },
+    {
+      "fact": "Lekarz prowadzący i NPWZ",
+      "retained": true,
+      "detail": "Lekarz A, NPWZ 0000001 na obu stronach."
+    },
+    {
+      "fact": "Odrębne dane pieczątki",
+      "retained": true,
+      "detail": "Lekarz B — NPWZ 0000002 oraz PIECZĄTKA TESTOWA na obu stronach."
+    },
+    {
+      "fact": "Widoczny stan pieczątki",
+      "retained": true,
+      "detail": "Opis widocznej ramki zachowany na obu stronach."
+    },
+    {
+      "fact": "Puste pola podpisu",
+      "retained": true,
+      "detail": "Oba wskazane pola podpisu opisano jako puste; zachowano etykiety."
+    },
+    {
+      "fact": "Relacje tabeli wyników",
+      "retained": true,
+      "detail": "Tabela GFM zachowuje nagłówki i oba wiersze wynik–jednostka–zakres."
+    },
+    {
+      "fact": "Zalecenie ze strony 2",
+      "retained": true,
+      "detail": "Kontrola za 7 dni; bez dodanej interpretacji."
+    },
+    {
+      "fact": "Literalny zapis ze strony 2",
+      "retained": true,
+      "detail": "Całe zdanie źródłowe pozostało."
+    },
+    {
+      "fact": "Identyfikator dokumentu",
+      "retained": true,
+      "detail": "TEST-0001 na obu stronach."
+    }
+  ],
+  "included_blocks_checked": [
+    {
+      "id": "p001-b001",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b002",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b005",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b006",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b007",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b008",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b009",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b010",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b011",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p001-b012",
+      "page": 1,
+      "retained": true
+    },
+    {
+      "id": "p002-b002",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b005",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b006",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b007",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b008",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b009",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b010",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b011",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b012",
+      "page": 2,
+      "retained": true
+    },
+    {
+      "id": "p002-b013",
+      "page": 2,
+      "retained": true
+    }
+  ],
+  "included_blocks_retained": 20,
+  "omitted_blocks": 5,
+  "new_public_json_has_no_schema_version": true,
+  "new_public_json_has_no_source_sha256": true,
+  "source_content_and_geometry_unchanged": true,
+  "limitation": "These are retention checks against the previously visually approved transcription, not a guarantee of MODEL reading accuracy."
+}

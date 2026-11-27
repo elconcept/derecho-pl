@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "model-document-converter",
+  "version": "0.2.0",
+  "description": "Wierna konwersja dokumentów przez MODEL z kontrolą źródła, warstwy OCR i geometrii.",
+  "author": {
+    "name": "Michał Ptak"
+  },
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "MODEL Konwerter",
+        "shortDescription": "OCR z kontrolą źródła",
+        "longDescription": "Jeden Skill do wiernej konwersji PDF i obrazów. MODEL odczytuje rendery, a helpery poprawiają lub dodają niewidoczny tekst bez rasteryzacji wejściowego PDF. Kontrole obejmują geometrię, pełność tekstu, oryginalne obrazy i zgodność wyglądu. Bundle zawiera searchable PDF, Markdown do analizy, JSON z bbox, LOG i raw; docelowo Google Drive Konwerter oraz ZIP. Zachowuje daty, autorów, pieczęcie i pola podpisów dokumentacji medycznej. Nie rozpoznaje tekstu przez zewnętrzny silnik OCR.",
+        "developerName": "Michał Ptak",
+        "category": "Productivity",
+        "capabilities": [
+          "Wierna konwersja PDF i obrazów",
+          "Naprawa niewidocznej warstwy OCR",
+          "Markdown i JSON z geometrią",
+          "Zapis bundle w Google Drive"
+        ],
+        "defaultPrompt": [
+          "Przetwórz załączony PDF: zachowaj dane dowodowe, popraw OCR i zapisz bundle w Konwerter na Drive.",
+          "Przekształć ten skan w searchable PDF, wierny Markdown i JSON z bbox. Zapytaj o niepewne odczyty."
+        ],
+        "logo": "./assets/logo-light.svg",
+        "composerIcon": "./assets/icon.svg"
+      }
+    }
+  }
+}

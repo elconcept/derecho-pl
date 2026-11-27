@@ -1,0 +1,392 @@
+[
+  {
+    "archive": "akta-przeszukiwalne-pl.zip",
+    "sha256": "1795f1fb78d969d7152667e3ad9eaa731e1d38fe8498ca07ba4917d7c56e6130",
+    "files": [
+      {
+        "path": "akta-przeszukiwalne-pl/LICENSE",
+        "size": 1891,
+        "sha256": "5e08dd0593e8e5d25206da4f59c906968320a168dbe4529abb757644833bb3ed"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/SKILL.md",
+        "size": 6576,
+        "sha256": "bb6bf9436b0f5f2b3978c3ff23bed4b954de70b2f94834780c2e0aee8da3df6b"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/tests/test_akta.py",
+        "size": 14535,
+        "sha256": "508d0a5b971cb07fa88ed76a4e0dec514bbb101f21892c7e62d1b2b4e413ad15"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/scripts/szukaj.py",
+        "size": 5474,
+        "sha256": "fd1d9100f9c3d394cbdbe5d33b4b07f4ddb76dea5f08bbacc8a8d01129ef4a22"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/scripts/DEFAULT_LANG",
+        "size": 4,
+        "sha256": "1ee973d7ff55083c934ab8522b0a80452d47788fb571676be1589d71282751a7"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/scripts/liteparse_extract.py",
+        "size": 7647,
+        "sha256": "7931489e20ac1750e2ba77f44134fae161b106ea49a8b23e5349ea99c63fd0e8"
+      },
+      {
+        "path": "akta-przeszukiwalne-pl/scripts/akta.py",
+        "size": 28071,
+        "sha256": "84154ebe8e578616ea9daaa97038c64cad0b6e95b709867199fad9e26298cab8"
+      }
+    ],
+    "skipped_platform_metadata": 2
+  },
+  {
+    "archive": "doc-intel-contract-pl.zip",
+    "sha256": "0ba3fde557881fb9edda2b993b78b0c2cdfa603a020f149f8a575ac1c59196de",
+    "files": [
+      {
+        "path": "doc-intel-contract-pl/README.md",
+        "size": 4237,
+        "sha256": "39e83fff1af05eba4d20d3fef32b5794ec02bd14ba5cb7323357ae1c7d320b5a"
+      },
+      {
+        "path": "doc-intel-contract-pl/SKILL.md",
+        "size": 24591,
+        "sha256": "16dafb1cd4a45153d8d9858d167aadc0691671e0c860b3356f2121c37ec41ffc"
+      },
+      {
+        "path": "doc-intel-contract-pl/contract/kategorie_pism.json",
+        "size": 2410,
+        "sha256": "e4809a214368148bf3e1782670ce09ce3b8ebcde0d084f1068ce3789861bb352"
+      },
+      {
+        "path": "doc-intel-contract-pl/contract/contract.schema.json",
+        "size": 4320,
+        "sha256": "56c84be51bd955500e88463ceec92afeccd4d79009d81cf0e49a3388746aa568"
+      },
+      {
+        "path": "doc-intel-contract-pl/contract/normalizacja.cases.json",
+        "size": 5946,
+        "sha256": "1a14bb2319ba03ab6e99f332d2ae36eed2e759f8e9787b75174fac63bf449365"
+      },
+      {
+        "path": "doc-intel-contract-pl/references/prompt_vlm_ocr_pl.md",
+        "size": 3383,
+        "sha256": "4bc7bb75efb791e91a29b7b358776ffcb19359fde599e738bfc490666a8bc5da"
+      },
+      {
+        "path": "doc-intel-contract-pl/references/render_skanu_pl.md",
+        "size": 1630,
+        "sha256": "9e5434d7bf804eadcaa25d03b8128b4cad8c8d88047d77a732d7504d72a0c97c"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_encoding_crlf.py",
+        "size": 1852,
+        "sha256": "9740aac44c97de5b2e91a2d167b6d68431b9e7dc95bdce596a99e433e6e638d7"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_adapter_liteparse.py",
+        "size": 4273,
+        "sha256": "e3f2198130eab5752fa7ac15b505eb6c7ab6cb5482f5b9dfd917f7968e4fd3bc"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_adapters_chandra_gaius.py",
+        "size": 5657,
+        "sha256": "25cbaf8c6001a6f468f4297794f98b05315325d972e4ce1e814244e3c4c3b033"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_normalizacja_kontrakt.py",
+        "size": 4708,
+        "sha256": "2142f5c6c3106c76b0fbe7ac8af1fa5ae25fc0f5b493a76bf4c800535423b803"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_routing_gate.py",
+        "size": 5759,
+        "sha256": "4cd61ddf823d99704aacf12cc534f6e5f5e0a66fc4d4dfdcbb1c44ea610de3e7"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_signature.py",
+        "size": 2686,
+        "sha256": "da1c55fa8a0aa4b1e8b0ebbd354abd948c927d505f4abeac37631b1bb36d6a60"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_grounding_bridge.py",
+        "size": 3226,
+        "sha256": "f299090aa980f1ec5122a030f0be5adb1be0708a016c6d8ddba06cc73736b088"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_mask_for_model.py",
+        "size": 4154,
+        "sha256": "502ecc38ee802adb9c559460395c0a8a102e7658ba0df77cff5dedd8cd76954f"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_contract.py",
+        "size": 4936,
+        "sha256": "3c47e3a16884c9e86800a5c9335c7c653651d87817dc4f100b92a27d49870a07"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_dokumentacja_zakotwiczona.py",
+        "size": 9679,
+        "sha256": "7f9a7a6d470ed1840acbfd5dc4ba84e1081ca3a8a48724b955996de2bdec1327"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_adapter_pdf_inspector.py",
+        "size": 5289,
+        "sha256": "011adc8859a30fe408852585fcf02286a704f5bfa8103dc5adbeb510741ff5b3"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_evidence.py",
+        "size": 23120,
+        "sha256": "744b28ac1df6cc9f16532dc6984f85e2d65763f962fefd48a3809b3eb636542c"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_pii.py",
+        "size": 4292,
+        "sha256": "dcda20b9643817f71b3139760f2759036be454b481b35d3277cba2f3da002a7d"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_vlm_html_degeneracja.py",
+        "size": 4177,
+        "sha256": "f39b9ef792a1eba5cb9ed0ef648ba9435c562424815f200233897a7e0738793a"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_routing_gate_abuse.py",
+        "size": 3782,
+        "sha256": "59e93786595740151217da22b446e7519301100cceceb824bdb887fac59223d8"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/test_split_packet.py",
+        "size": 5592,
+        "sha256": "a26fecc668d41dcb7b1b6621a02c507ec4d84f8ac9fdfce2f401e0a4688edf2f"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/pii_flags.py",
+        "size": 3552,
+        "sha256": "ba43c47ba79a96bba6f8d051a37b38ef76eeafe04dbe34e33ab6f39448c8f9d2"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/split_packet.py",
+        "size": 20693,
+        "sha256": "251132f48e1ffdff9de0702e362e829d50538c1453cd770a64e441aaee5cff98"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/grounding_bridge.py",
+        "size": 9628,
+        "sha256": "a1d79f91e94933ff52b31d373e135705ebe5441912f46f17c4f8ca5aa559893e"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/normalize.py",
+        "size": 7177,
+        "sha256": "21cc58a1f7d9730a5359061937afe61fdc64a9ab1b2de28c0226e4d312b6f844"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/mask_for_model.py",
+        "size": 5161,
+        "sha256": "59588dd753d8cbc72de873184c35f4a9ab2c7433221b49667ffaf665fe0c07ac"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/pdfi_extract.py",
+        "size": 4929,
+        "sha256": "25461e9a16ff0e202ad618c1d23e6fdaf19da3c95cfd1699cd4304e037705af6"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/routing_gate.py",
+        "size": 14154,
+        "sha256": "c1bc73696d04b620c822b0552ef3e827624dfeaa7022d402849c383f90e819b5"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/degeneracja.py",
+        "size": 1720,
+        "sha256": "387471b3e8d0ef7180c654aa6ba1ec415552caf81667baf32bcf1c956ce6ac99"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/liteparse_extract.py",
+        "size": 7445,
+        "sha256": "b7bbd64e210e3915eb0f66e2d3ae48ad03277c55e77d80e99999dd8de0e90fc5"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/signature.py",
+        "size": 2497,
+        "sha256": "1ac97afa8ce38ea00a390a9255e7a348a074f0bd8fcf98c0fc2bfb682320550a"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/contract.py",
+        "size": 6383,
+        "sha256": "7a615539f5b648b18ee8f68ae711d46eff7c6e2983a7d00a967586f13336c598"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/evidence.py",
+        "size": 12775,
+        "sha256": "3b72bedba61ca6b189287a49ccc2cc8a0acd7315b3d6fe0dee4618968ab6adea"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/opendataloader.sample.json",
+        "size": 799,
+        "sha256": "6e5fbb9204bc773ca5e3e3c084d96ca6eda718e21c4eed2727cc1739567f16f0"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/gaius.sample.json",
+        "size": 208,
+        "sha256": "e8e72c5818d06d3d3632f06bea97fceb25867de0a5ba1caea63a47f5e2cf0737"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/chandra.sample.json",
+        "size": 776,
+        "sha256": "bb0a8a29bd8a4f9ff3629d00e5f2ff003b12de2aa328e81d30265da1598b92bb"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/gaius_pl.sample.json",
+        "size": 240,
+        "sha256": "9701d5e0e7793dabe9966d8213a2a3cf86df541b90c60e73e5f0f4894079d8f0"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/chandra2.sample.json",
+        "size": 612,
+        "sha256": "d6f5177aa3b816ec1fb439a2b76b2cdd43050acfc465eb491c9841bc3713dffe"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/pismo_pl_typografia.sample.json",
+        "size": 2489,
+        "sha256": "a4465ddc20c2d1b37e2921438d88e9b0afe3119f816b277546323f7defb2c152"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/plain.sample.txt",
+        "size": 188,
+        "sha256": "79399635d4e57097653145701c60d47a8c965a9a7a79873d01b65641eebf7c7a"
+      },
+      {
+        "path": "doc-intel-contract-pl/tests/fixtures/vlm_html.sample.html",
+        "size": 913,
+        "sha256": "1707741fd3b9999b1c924f94245846ec6ab09106c72a46954a32385b50df0f7a"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/liteparse.py",
+        "size": 8511,
+        "sha256": "e06fdd8653e55cfb9472a48a2fdf05557a29fd09a51a0e2b5ca3c878d63cd010"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/vlm_html.py",
+        "size": 5222,
+        "sha256": "fc6df129c3aa64181a7f73d7f3fa7e78259878930198c257756e2a80527491fd"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/opendataloader.py",
+        "size": 2464,
+        "sha256": "0661e3166588686b4984f1b17a4c732ad1f88524e56afe12beb9f57e03c01f97"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/__init__.py",
+        "size": 67,
+        "sha256": "2f703c1b3869cdc06afb0f3f9704e43c8e123bfcb3aada96c4fa884e0861ee7c"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/pdftotext.py",
+        "size": 1470,
+        "sha256": "4adf4ee6dadf4196dbf1a28917c6595975dd10624ff05e5e0585960f2cf31a03"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/chandra.py",
+        "size": 5605,
+        "sha256": "0be33443eb2232e92b6fd60ddc86c777e4d81c0d54bf5dd53465ee8094ac66f6"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/pdf_inspector.py",
+        "size": 7360,
+        "sha256": "e88bf099a924942541e1335f1cd9b09e180e19664bb7232884302e4ba1fdf57b"
+      },
+      {
+        "path": "doc-intel-contract-pl/scripts/adapters/gaius.py",
+        "size": 1982,
+        "sha256": "bccab4f7bbbd2046ecc622af6bc2b52e18c02073e65d199d0d440ead3fe24974"
+      },
+      {
+        "path": "doc-intel-contract-pl/.matematic/spec/001-output-contract-mvp/tasks.md",
+        "size": 3367,
+        "sha256": "4d6c02089eee87735bf9ad3727e8400bfc11d60ca4758befc6276df1e21761e8"
+      },
+      {
+        "path": "doc-intel-contract-pl/.matematic/spec/001-output-contract-mvp/plan.md",
+        "size": 3501,
+        "sha256": "c0718ec513546aa35087c3a9de57e301957a89ae061337b7a42cf5368ca2db4f"
+      },
+      {
+        "path": "doc-intel-contract-pl/.matematic/spec/001-output-contract-mvp/spec.md",
+        "size": 3145,
+        "sha256": "cfac6c6ac4e597db48b4202f1b37a6fba1f087f366f99c704f451e5d5a343e71"
+      }
+    ],
+    "skipped_platform_metadata": 8
+  },
+  {
+    "archive": "doc-intel-llm-tier-pl.zip",
+    "sha256": "83c584d9be8bb3903664fe267d3a85b64f77a712f7847be4980ccb000e9411a2",
+    "files": [
+      {
+        "path": "doc-intel-llm-tier-pl/LICENSE",
+        "size": 1891,
+        "sha256": "5e08dd0593e8e5d25206da4f59c906968320a168dbe4529abb757644833bb3ed"
+      },
+      {
+        "path": "doc-intel-llm-tier-pl/README.md",
+        "size": 2069,
+        "sha256": "6d2f353fec55a33087f0a1c68ceef0bc7579b0d0ba699c1aa3a3fcfe8dfb9b36"
+      },
+      {
+        "path": "doc-intel-llm-tier-pl/SKILL.md",
+        "size": 8359,
+        "sha256": "8beb2d025669b81a0428623b1190528adb312fa785b1837005ef764d0238ff68"
+      },
+      {
+        "path": "doc-intel-llm-tier-pl/references/wzorce_konceptow_prawnych.md",
+        "size": 3692,
+        "sha256": "c02414040f7e9c6f46481636ae388b2d284b7db28bbb441b17268954e15cd56f"
+      },
+      {
+        "path": "doc-intel-llm-tier-pl/scripts/ekstrakcja_llm.py",
+        "size": 10471,
+        "sha256": "582bdc070335ddd8997077f59000a85cac83d3ffa21b631a1077ef75ae1da7b0"
+      }
+    ],
+    "skipped_platform_metadata": 2
+  },
+  {
+    "archive": "opendataloader-pdf.zip",
+    "sha256": "7fb7e0d10f41f5af8a9b7598aaff01f15cef125c046b31bdbaa5e98011798a47",
+    "files": [
+      {
+        "path": "opendataloader-pdf/LICENSE",
+        "size": 11366,
+        "sha256": "38aadef461c23c672bf1b4c536a7dc16844266348ca73e11098e05bd759652c1"
+      },
+      {
+        "path": "opendataloader-pdf/SKILL.md",
+        "size": 5291,
+        "sha256": "cff36866177dc6b255507297d5f9ef4464049546b674eeb93a1839d4b022e55c"
+      }
+    ],
+    "skipped_platform_metadata": 0
+  },
+  {
+    "archive": "waliduj-podpis-pdf-pl.zip",
+    "sha256": "9511b43e4e503c8088468faae88a28ff2f5d5db0e6c4b39438922fe2e123443a",
+    "files": [
+      {
+        "path": "waliduj-podpis-pdf-pl/LICENSE",
+        "size": 1891,
+        "sha256": "5e08dd0593e8e5d25206da4f59c906968320a168dbe4529abb757644833bb3ed"
+      },
+      {
+        "path": "waliduj-podpis-pdf-pl/SKILL.md",
+        "size": 8425,
+        "sha256": "47d8c48f94af32f59eb2d6428e60d68a536183338290831c53ee42ff9c42aa76"
+      },
+      {
+        "path": "waliduj-podpis-pdf-pl/waliduj_podpis.py",
+        "size": 10848,
+        "sha256": "c4e4fbd50d85245847ae993e18b77f77552a9d2b6ef6766d63b2d812aa540ebf"
+      }
+    ],
+    "skipped_platform_metadata": 0
+  }
+]
