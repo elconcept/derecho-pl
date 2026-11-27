@@ -8,7 +8,7 @@
   "skills": "./skills/",
   "apps": "./.app.json",
   "interface": {
-    "displayName": "MODEL Konwerter",
+    "displayName": "Dokumenty",
     "shortDescription": "OCR z kontrolą źródła",
     "longDescription": "Jeden Skill do wiernej konwersji PDF i obrazów. MODEL odczytuje rendery, a helpery poprawiają lub dodają niewidoczny tekst bez rasteryzacji wejściowego PDF. Kontrole obejmują geometrię, pełność tekstu, oryginalne obrazy i zgodność wyglądu. Bundle zawiera searchable PDF, Markdown do analizy, JSON z bbox, LOG i raw; docelowo Google Drive Konwerter oraz ZIP. Zachowuje daty, autorów, pieczęcie i pola podpisów dokumentacji medycznej. Nie rozpoznaje tekstu przez zewnętrzny silnik OCR.",
     "developerName": "Michał Ptak",

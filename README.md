@@ -4,7 +4,7 @@ Marketplace pluginów do pracy z dokumentami w ChatGPT i Codex.
 
 ## Założenia i niezależny audyt
 
-Dla MODEL Konwertera punktem odniesienia jest [specyfikacja wymagań produktu](docs/model-konwerter/ZALOZENIA.md), a zgodność sprawdza [macierz 45 kryteriów odbioru](docs/model-konwerter/KRYTERIA_ODBIORU.md). [Rejestr decyzji i rozbieżności](docs/model-konwerter/STAN_I_DECYZJE.md) oddziela wymagania użytkownika, obecne ograniczenia i wyniki audytów. Dokumenty opisują oczekiwane zachowanie; nie poświadczają pełnej zgodności wersji 0.2.0.
+Dla pluginu Dokumenty (wcześniej MODEL Konwerter) punktem odniesienia jest [specyfikacja wymagań produktu](docs/model-konwerter/ZALOZENIA.md), a zgodność sprawdza [macierz 45 kryteriów odbioru](docs/model-konwerter/KRYTERIA_ODBIORU.md). [Rejestr decyzji i rozbieżności](docs/model-konwerter/STAN_I_DECYZJE.md) oddziela wymagania użytkownika, obecne ograniczenia i wyniki audytów. Dokumenty opisują oczekiwane zachowanie; nie poświadczają pełnej zgodności wersji 0.2.0.
 
 Raporty niezależne są w [katalogu audyt](audyt/), w tym [audyt MODEL Konwerter 0.2.0](audyt/2026-11-27T03-25-01Z_v0.2.0/AUDYT_DERECHO_PL_0_2_0.md). Audytor powinien przypiąć commit i ocenić wymagania według tych dokumentów; instrukcje i deklaracje autora pluginu są materiałem do sprawdzenia.
 
@@ -12,7 +12,7 @@ Raporty niezależne są w [katalogu audyt](audyt/), w tym [audyt MODEL Konwerter
 
 | Plugin | Wersja | Opis |
 |---|---|---|
-| [MODEL Konwerter](plugins/model-document-converter) | 0.2.0 | PDF i obrazy → searchable PDF, zwarty MD, JSON z bbox, LOG, raw |
+| [Dokumenty](plugins/model-document-converter) | 0.2.0 | PDF i obrazy → searchable PDF, zwarty MD, JSON z bbox, LOG, raw |
 
 ## Import do ChatGPT
 

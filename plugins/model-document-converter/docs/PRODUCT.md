@@ -1,4 +1,4 @@
-# MODEL Konwerter 0.2.0
+# Dokumenty 0.2.0
 
 Prywatny plugin: jeden Skill model-ocr, hostowy Python i widzenie MODEL, istniejąca aplikacja Google Drive. Nie ma własnego serwera ani pośredniego silnika OCR.
 
