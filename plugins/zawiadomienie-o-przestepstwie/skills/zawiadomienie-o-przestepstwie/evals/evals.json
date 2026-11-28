@@ -249,7 +249,7 @@
       "id": 33,
       "name": "Rozmowa bez infrastruktury",
       "prompt": "Nie mam repo, skanów ani dokumentów. Chcę opowiedzieć o latach przemocy.",
-      "expected_output": "Model nie wymaga repozytorium, Basic Memory ani dowodów, zaprasza do swobodnej relacji i zadaje potem jedno otwarte pytanie.",
+      "expected_output": "Model nie wymaga repozytorium, zewnętrznego zapisu ani dowodów, zaprasza do swobodnej relacji i zadaje potem jedno otwarte pytanie.",
       "files": []
     },
     {
