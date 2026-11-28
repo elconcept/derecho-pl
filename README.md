@@ -13,6 +13,7 @@ Raporty niezależne są w [katalogu audyt](audyt/), w tym [audyt MODEL Konwerter
 | Plugin | Wersja | Opis |
 |---|---|---|
 | [Dokumenty](plugins/model-document-converter) | 0.2.0 | PDF i obrazy → searchable PDF, zwarty MD, JSON z bbox, LOG, raw |
+| [Zawiadomienie o przestępstwie](plugins/zawiadomienie-o-przestepstwie) | 1.0.0 | Relacja pokrzywdzonego i zawiadomienie; jeden samodzielny skill, relacje w repo `elconcept/legal` |
 
 ## Import do ChatGPT
 
@@ -28,6 +29,7 @@ Po imporcie udostępnij plugin i połącz Google Drive. [Dokumentacja OpenAI](ht
 ```sh
 codex plugin marketplace add elconcept/derecho-pl --ref main
 codex plugin add model-document-converter@derecho-pl
+codex plugin add zawiadomienie-o-przestepstwie@derecho-pl
 ```
 
 ## Uruchomienie i testy konwertera
@@ -43,6 +45,14 @@ python -m unittest discover -s tests -v
 Helper sprawdza przypięty SHA-256 fontu i odmawia zastąpienia go niezweryfikowanym zasobem. Do uruchomienia konwersji można także przekazać zweryfikowaną ścieżkę przez --font.
 
 Dokumentacja: [kontrakt skilla](plugins/model-document-converter/skills/model-ocr/SKILL.md), [poprawki audytu](plugins/model-document-converter/docs/AUDIT_REMEDIATION.md), [licencje komponentów](plugins/model-document-converter/THIRD_PARTY_NOTICES.md).
+
+## Testy zawiadomienia o przestępstwie
+
+Testy regresyjne pilnują samodzielności skilla (brak odwołań do `shared/`, innych skilli i Basic Memory), kontraktu `SKILL.md`, istnienia wskazanych ścieżek, skryptów i evali. Z katalogu `plugins/zawiadomienie-o-przestepstwie`:
+
+```sh
+python -I -m unittest discover -s tests -v
+```
 
 ## Dodawanie kolejnych pluginów
 

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "zawiadomienie-o-przestepstwie",
+  "version": "1.0.0",
+  "description": "Wielosesyjny wywiad z pokrzywdzonym, pełna relacja zdarzeń i zawiadomienie o przestępstwie do prokuratury lub Policji.",
+  "author": {
+    "name": "elconcept"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Zawiadomienie o przestępstwie",
+        "shortDescription": "Relacja pokrzywdzonego i zawiadomienie",
+        "longDescription": "Jeden samodzielny skill dla pokrzywdzonego: wywiad pojedynczymi pytaniami, chronologiczna relacja i log zeznań w repozytorium elconcept/legal (relacje/), lista złożonych zgłoszeń z sygnaturami, dobór pisma do etapu sprawy oraz redakcja zawiadomienia lub uzupełnienia. Relacja jest podstawą pisma; brak dowodów niczego nie usuwa. Redakcji zażalenia i pism procesowych skill nie obejmuje.",
+        "developerName": "elconcept",
+        "category": "Legal",
+        "capabilities": [
+          "Wywiad z pokrzywdzonym",
+          "Chronologiczna relacja i log zeznań",
+          "Zawiadomienie i uzupełnienia",
+          "Lista zgłoszeń i sygnatur"
+        ],
+        "defaultPrompt": [
+          "Chcę zawiadomić o przestępstwie, opowiem po kolei, co się stało. Zadawaj pojedyncze pytania.",
+          "Wznów moją relację z repozytorium legal i dopisz nowe wspomnienia."
+        ]
+      }
+    }
+  }
+}

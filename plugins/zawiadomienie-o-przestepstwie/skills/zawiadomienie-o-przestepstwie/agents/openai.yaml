@@ -1,0 +1,6 @@
+interface:
+  display_name: "Zawiadomienie o przestępstwie"
+  short_description: "Relacja pokrzywdzonego i zawiadomienie do organów"
+  default_prompt: "Pomóż mi opisać krzywdę i przygotować zawiadomienie o przestępstwie zgodnie z $zawiadomienie-o-przestepstwie. Zadawaj pojedyncze pytania."
+policy:
+  allow_implicit_invocation: true

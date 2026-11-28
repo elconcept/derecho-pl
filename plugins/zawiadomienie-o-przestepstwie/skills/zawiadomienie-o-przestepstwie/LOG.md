@@ -1,0 +1,124 @@
+# LOG skilla `zawiadomienie-o-przestepstwie`
+
+Dziennik zmian, decyzji autora i iteracji na konkretnych zadaniach. Szczegóły iteracji zapisuj tutaj, nie w `SKILL.md`.
+Wnioski ogólne (korekty błędów) przenoś do sekcji „Gotchas” w `SKILL.md`. Wpisy sprzed 1.0 opisują stan historyczny
+(m.in. zapis w Basic Memory i odwołania do `shared/`); nie obowiązują.
+
+## v1.0 (2026-11-27) — samodzielny skill, relacje w repo `elconcept/legal`
+- Wszystkie odwołania do `shared/` i do innych skilli zastąpione kopią potrzebnych fragmentów w `references/`:
+  `hardgate-zop.md` (kontrakt NARRATIVE-FIRST), `recenzja-rozszerzajaca.md` (role bez nazw skilli), `tekst-jednolity.md`,
+  `artefakty-i-wersje.md`, `format-pisma.md`, `po-odmowie-i-sad.md` (scenariusze zażalenia A/B/C, terminy; skill nie redaguje
+  zażalenia ani pism procesowych), `kanon-i-bramki.md`. Skrypty `wersja_pisma.py` i `render_pismo.py` skopiowane do `scripts/`.
+  Kontrola języka: lokalna lista wzorców w `styl.md` zamiast `pisz-po-polsku`.
+- Basic Memory zastąpione zapisem w repo `elconcept/legal`, katalog `relacje/<autor-slug>/` (`references/relacje-repo.md`,
+  dawniej plik o nazwie z Basic Memory). Kolejność dostępu: integracja GitHub, lokalna kopia repo, w ostateczności jawna
+  informacja o ograniczeniach (brak wznowienia relacji, listy zgłoszeń i AUDYTU-B; wynik `NIEZAPISANE`).
+  Pytania otwarte według konwencji repo `legal` (`DO_DECYZJI.md`, `relacje/PYTANIA_ZAMKNIETE.md`).
+- `SKILL.md` przebudowany: zakres, reguła nadrzędna, dostęp do relacji, przebieg F0–F8, format odpowiedzi, obowiązkowa
+  sekcja „Gotchas”, tabela plików. Ciało poniżej 500 linii. Opis (893 znaki) w trybie rozkazującym, z intencjami
+  użytkownika i kontekstami wejścia; ten sam opis w `selection/selection.yaml` (build bierze go stamtąd).
+- Historia zmian przeniesiona z `references/CHANGELOG.md` (brak w pluginie) do `LOG.md`. `scripts/build.py` (brak w pluginie): skill na liście
+  `NO_PROTOCOL_INJECTION` (bez doklejanej sekcji MOST z odwołaniami do `shared/` i innych skilli).
+- Poza zakresem tej zmiany: `shared/ZASADY-PLUGINU.md`, patche routera (`02`, `06`, `07`) nadal mówią o dawnych notatkach.
+
+
+## v0.9 (2026-10-29) — zgłoszenia i odcięcie od sądu
+- Nowa notatka `Zgłoszenia — <Autor>` w Basic Memory: lista złożonych zawiadomień (tylko po wprost potwierdzonym złożeniu),
+  zgłoszonych czynów z sygnaturami i etapem, postępowań przed sądem, pozycje `Do ustalenia`. Zasady: `references/zgloszenia.md`.
+- Wejście: weryfikacja pięciu notatek systemu i `wersje/`; przy braku systemu model najpierw prosi o przesłanie wszystkich
+  złożonych zawiadomień, potem tworzy brakujące pliki.
+- Uzupełnienia i wnioski towarzyszące w postępowaniu przygotowawczym idą na torze zawiadomienia (HARDGATE-ZOP), nie
+  pism procesowych. Odcięcie: zakończone postępowanie przygotowawcze, sprawa przed sądem; od tej chwili pisma procesowe.
+- Wybór pisma per epizod: nowe zawiadomienie / uzupełnienie wskazujące `Z-ID` i sygnaturę / pismo procesowe / środek zaskarżenia.
+- Router (`selection/patches/02-prawny-router-v3-zawiadomienie.patch`): etap z notatki `Zgłoszenia` wybiera tor; zawiadomienie,
+  uzupełnienie i wnioski w postępowaniu przygotowawczym idą tym skillem, zażalenie na rozstrzygnięcie organu i sprawa przed sądem
+  normalnym torem pism, etap nieznany wymaga pytania o sygnaturę.
+
+## v0.4 (2026-10-15) — integralność narracji
+- Dokończenie po przerwanej sesji Astry: przywrócone frazy wyzwalające w opisie skilla; tabela skilli pomocniczych kieruje szturm/atak/adversarial do recenzji rozszerzającej (R4a: czyny i naruszenia praw, których autor nie nazwał, także przez organy) zamiast mandatu przeciwnika.
+- Uzupełnienie po audycie `INBOX/20261010_AUDYT_SKILLI_kolizje_zawiadomienia.md`: zamknięta kolizja A2 (HYBRID/BLOCK ZERO), doprecyzowane A3 (draft a dane formalne), A6 (pochodzenie edycji/kwoty z relacji), A7 (brak repo nie blokuje). Wbrew dawnemu zaleceniu A9 „bez zmian” dodano ochronę także w punktach wejścia recenzji zgodnie z późniejszą instrukcją użytkownika.
+- Kontrakt między modułami w `shared/ZAWIADOMIENIE-NARRATIVE-FIRST.md`, źródło `selection/overlay/shared/`; wyjątki w routerze i patchu 06 dla HYBRID, FAKTY, CLAIM, FSL/LSL, ataku, adversarial i kwalifikatora. Szturm oraz profil mają własny warunek wejścia; most nie wymusza automatycznej recenzji.
+- Poprawki po testach: data względna zakotwiczona w relacji, kontrola przesłanki pytania o wcześniejszy zapis, bez domyślnego autorstwa cytatu; formalna gotowość oddzielona od zakończenia redakcji.
+- HARDGATE-ZOP chroni relację także po recenzji lub załadowaniu korpusu dowodowego. Brak zewnętrznego dowodu nie usuwa ani nie osłabia epizodu.
+- HARDGATE-A kontroluje kompletność wywiadu z możliwością świadomego zakończenia przez autora; AUDYT-B ujawnia różnice bez blokady złożenia. Zastępuje blokujący K5 z v0.3.
+- Wywiad adaptacyjny, gałęzie KWALIFIKACJA+, przegląd skutków/wzorca/następstw/instytucji/pilności, podsumowanie do korekty; bez zgadywania cudzej perspektywy.
+- Rozdzielone narracja, tropy i informacje praktyczne; mapa zawiera źródło i pewność pamięci. Prawo z historycznego katalogu wymaga ponownej weryfikacji dla sprawy.
+- Zachowane preferencje autora dotyczące pierwszej osoby, otwarcia, wniosku o ściganie i listy przepisów; wyjaśniono ich zakres i brak blokady przy niezweryfikowanej kwalifikacji.
+- Pochodzenie: [pochodzenie i memo researchowe](research.md) (38 pozycji, w tym duplikaty). Narracja/tropy: źródła 1–4, 8, 14; wywiad/skutki: 1–10, 12, 15–17, 24, 27, 30, 34–36; bezpieczeństwo: 7, 12, 23, 36; routing/aktualność: 13, 18–22, 25–26, 28–29, 32–33, 37. Blogi służą projektowaniu pytań, nie ustalaniu aktualnego prawa.
+- Rozszerzone evale behawioralne do 21 scenariuszy. [Forward-test](../evals/20261015-forward-test.md): 11 dokładnych promptów i 6 wariantów pokrywających 17 ID, z jawnymi błędami oraz retestami. [Test integracji](../evals/20261015-integration-test.md): cztery próby po audycie, zakres i ograniczenia oraz rzeczywisty test adaptera syntezy. Nie deklaruje pełnego testu DOCX ani wielokrotnej stabilności modelu.
+
+## v0.3 (2026-10-10)
+- Zapis według `shared/ARTEFAKTY-SPRAWY.md`: mapa krzywd i raport HARDGATE jako pliki inkrementalne pisma
+  (`_MAPA_KRZYWD.md`, `_HARDGATE.md`), jednorazowe pliki w `_robocze/`.
+
+## v0.2.1 (2026-10-10)
+- Wspólne pożycie: uchwała 7 sędziów SN z 25.02.2016, I KZP 20/15 i postanowienie SN z 4.03.2015,
+  IV KO 98/14 - zweryfikowane w SAOS przez Tor (rotator), citator ręczny; doktryna: M. Kubica,
+  OSAP XV/3 (2017), OCR w `04_opracowania/` (the-ocr, Azure DI). task014 zamknięty.
+
+## v0.2 (2026-10-09) - decyzje autora
+- Nazwa: `zawiadomienie-o-przestepstwie` (bez `-pl`).
+- Otwarcie jak we wzorze Policji (gov.pl): „Zawiadamiam o popełnieniu na moją szkodę przestępstwa …
+  i wnoszę o wszczęcie postępowania”; tytuł „Zawiadomienie o popełnieniu przestępstwa”; bez
+  „podejrzenia” i „możliwości popełnienia”.
+- Lista przepisów na końcu pisma: numer ze zweryfikowanego t.j. + prosty opis, stanowczo („Uważam,
+  że opisane zachowania są przestępstwami określonymi w …”). W narracji nadal bez przepisów.
+- Wniosek o ściganie zawsze i obowiązkowo.
+- HARDGATE obejmuje też relacje innych osób (źródło szczegółów, zakres informacyjny); każda
+  informacja od innej osoby w piśmie ma wskazane źródło. Nowa klasa „rozbieżność pozorna” i test
+  pozornej sprzeczności; wzorzec błędu N.C. „partner” / „obcy” (art. 115 § 11 k.k., trzy więzi
+  wspólnego pożycia); zakaz strofowania autora.
+- K4: przepisy o fałszywym zawiadomieniu / zeznaniu / oskarżeniu zweryfikowane (art. 238, 233, 234,
+  8, 9 § 1 k.k.).
+- Katalog krzywd: przepisy i tryb ścigania zweryfikowane w Kodeksie karnym t.j. Dz.U. 2025 poz. 383
+  (baza `mcp/cache/kodeks/kodeks_karny.md`); przepisy k.p.k. (12, 17, 49, 119, 303-307, 325a)
+  z t.j. Dz.U. 2026 poz. 490 (PDF z ISAP, odczyt PyMuPDF).
+- Evals: dodany przypadek 4 (pozorna sprzeczność) i asercje dla decyzji.
+
+## v0.1 (2026-10-09)
+- Scaffolding: SKILL.md (kanon K1-K5, przebieg F0-F8, kolizje z innymi skillami), references
+  (wywiad, mapa-krzywd, hardgate-spojnosc, styl, oczami-prokuratora, forma), assets/szablon.md,
+  scripts/rejestr_relacji.py, evals/evals.json.
+- K4 według korekty autora: przed odpowiedzialnością za fałszywe zawiadomienie chroni dobra wiara,
+  nie ostrożność sformułowań; rozróżnienie fakt / wniosek / hipoteza służy czytelności.
+- Plan i materiał źródłowy: `dokumentacja/20261009_plan_skill_zawiadomienie_o_przestepstwie.md`.
+
+## 0.5 — 2026-10-17
+
+- Pojedyncze pytania i zapis po odpowiedzi; wywiad trwa do decyzji autora o przerwie,
+  braku dalszych wspomnień lub opracowaniu obecnego materiału.
+- Trwała pełna relacja MD, wejście z istniejącego pliku, historia korekt i wersje sesyjne.
+- Rejestr pism: nowe wersje niezłożonych projektów, uzupełnienia i wnioski po złożeniu,
+  osobne zgłoszenia nowych krzywd; dobór do rzeczywistego etapu sprawy.
+
+## 0.8 - 2026-10-22 (decyzja właściciela: dane wrażliwe, wersje pism)
+
+- Odwraca wpis z 0.7 „dane o zdrowiu osób trzecich tylko za zgodą”: dane o zdrowiu, medyczne, intymne
+  i inne wrażliwe dane osób trzecich i autora trafiają do zawiadomienia w pełnym zakresie relacji, bez pytania
+  o zgodę, łagodzenia i komentarza. Wyjątek „nie obciążaj mnie” tylko dla autora, na jego prośbę. Opis osoby
+  nie jest wnioskiem o jej ściganie. Zmiany: `ciaglosc-sesji.md`, `wywiad.md` (przemoc seksualna: ostrożność
+  dotyczy tempa pytań, nie treści pisma), `SKILL.md`, `shared/ZAWIADOMIENIE-NARRATIVE-FIRST.md`; eval 29.
+  Źródło: `INBOX/20261022_ZADANIE_zawiadomienie_dane_wrazliwe_osob_trzecich.md`.
+- Wersje pisma: każda nowa informacja daje kolejną wersję `.md` w `drafty/<pismo>/` teczki; w `output/` jeden DOCX
+  z redline od bazy sesji (`shared/format-pisma/wersja_pisma.py`). Zastępuje „jedna wersja w `output/`, usunięcie
+  po `cmp`” z 0.7.
+
+## 0.7 — 2026-10-18 (decyzje autorki z sesji relacji N.C.)
+
+- Basic Memory jako baza danych relacji: `legal`, `relacje/<autor-slug>/` (relacja, log, rejestr,
+  pytania otwarte, wersje, archiwum); pliki relacji tylko awaryjnie bez dostępu do bazy; procedura
+  migracji plików. Nowy plik plik o zapisie w Basic Memory (usunięty w 1.0).
+- Pełna lista pytań otwartych w każdej odpowiedzi sesji relacji; ponawianie i przeformułowanie
+  pytań bez odpowiedzi; odpowiedzi zbiorcze przypisywane po treści.
+- Pisma w `output/` bez placeholderów: najbardziej prawdopodobna wartość danej formalnej i pytanie;
+  luk faktów nie zapełnia się domysłem. Jedna wersja w `output/`, usunięcie po `cmp` z `drafty/`.
+- Ręczna edycja autora w `.docx` ma pierwszeństwo; zachowanie edytowanego pliku w `drafty/`.
+- „Nie obciążaj mnie”, dane o zdrowiu osób trzecich tylko za zgodą, skutki w każdym piśmie, którego dotyczą.
+- Pisma towarzyszące torem procesowym (weryfikacja przepisów); zawiadomienie bez HYBRID-VALIDATION.
+- `forma.md`: oświadczenie o zgodzie na e-doręczenia (art. 119 § 1 pkt 2 lit. a k.p.k.) dopiero od wejścia w życie brzmienia.
+
+## 0.6 — 2026-10-17
+
+- Rozdzielenie chronologicznej relacji i dopisywanego logu zeznań z sesji.
+- Nowe wspomnienia porządkują całą oś czasu; stałe ID pozostają po przeniesieniu epizodów.
+- Korekty zachowują historię w logu; import starszych relacji bez fikcyjnych dat sesji.
