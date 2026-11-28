@@ -17,7 +17,7 @@ Wnioski ogólne (korekty błędów) przenoś do sekcji „Gotchas” w `SKILL.md
 - `SKILL.md` przebudowany: zakres, reguła nadrzędna, dostęp do relacji, przebieg F0–F8, format odpowiedzi, obowiązkowa
   sekcja „Gotchas”, tabela plików. Ciało poniżej 500 linii. Opis (893 znaki) w trybie rozkazującym, z intencjami
   użytkownika i kontekstami wejścia; ten sam opis w `selection/selection.yaml` (build bierze go stamtąd).
-- Historia zmian przeniesiona z `references/CHANGELOG.md` (brak w pluginie) do `LOG.md`. `scripts/build.py` (brak w pluginie): skill na liście
+- Historia zmian przeniesiona z `references/CHANGELOG.md` do `LOG.md`. `scripts/build.py`: skill na liście
   `NO_PROTOCOL_INJECTION` (bez doklejanej sekcji MOST z odwołaniami do `shared/` i innych skilli).
 - Poza zakresem tej zmiany: `shared/ZASADY-PLUGINU.md`, patche routera (`02`, `06`, `07`) nadal mówią o dawnych notatkach.
 

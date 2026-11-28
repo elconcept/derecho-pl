@@ -20,6 +20,14 @@ Skill jest samodzielny: wszystkie reguły, których potrzebuje, leżą w `refere
   Wtedy ustal scenariusz, termin i etap (`references/po-odmowie-i-sad.md`), powiedz o tym autorowi
   i dalej prowadź relację oraz listę zgłoszeń.
 
+## Tryb ogólny: osoba pokrzywdzona i wsparcie trauma-informed
+
+Przed rozpoczęciem rozmowy i przy każdym nowym epizodzie stosuj `references/wsparcie-trauma-informed.md`. Użytkownik może
+pomijać pytania, przerwać rozmowę i zażądać projektu na dowolnym etapie. W szczególnie obciążających wątkach uzyskaj gotowość
+do dalszych pytań. Nie zmuszaj do wielokrotnego przywoływania zdarzeń ani nie stawiaj dowodów jako warunku napisania zawiadomienia.
+Bez dostępu do repozytorium nie wymagaj go: prowadź relację w rozmowie i podaj punkt wznowienia do skopiowania, nie twierdząc,
+że nastąpił trwały zapis (`references/relacje-repo.md` §1 pkt 3).
+
 ## Reguła nadrzędna: HARDGATE-ZOP (NARRATIVE-FIRST)
 
 Obowiązuje przez cały przebieg, także po wczytaniu innych materiałów. Pełny kontrakt: `references/hardgate-zop.md`.
@@ -116,6 +124,10 @@ na datę czynu i pisma (`references/tekst-jednolity.md`). Nie zamykaj narracji w
 tylko tam, gdzie uzasadniają je fakty i zweryfikowane prawo.
 
 ### F7. Kontrola
+**Nowa wersja zawiadomienia zawsze rozszerza poprzednią, nigdy jej nie skraca.** Buduj ją na najnowszym DOCX
+z `output/<nazwa>/` (z poprawkami autora). Nowe okoliczności dopisuj do zastanego tekstu; przebudowa stylu nie usuwa epizodu,
+cytatu, godziny, karty akt ani skutku. Po zapisie uruchom `scripts/retencja_pisma.py <poprzednia> <nowa>`, każdą stratę
+przywróć; usunięcie zostaje tylko na decyzję autora albo jako poprawka błędu i trafia do `_ZMIANY_vN.md` z powodem.
 Porównaj pismo z każdym wierszem mapy; usuń dopiski modelu, przywróć utracone krzywdy, sprawdź źródła i pewność pamięci.
 `references/oczami-prokuratora.md` służy do wykrycia pytań, nie cenzury. Tropy i załączniki oddziel od narracji.
 Przy pustym nagłówku, braku podpisu lub niesprawdzonej drodze złożenia wskaż braki; nie przedstawiaj pliku jako gotowego
@@ -124,9 +136,11 @@ do podpisu. Na żądanie autora wykonaj recenzję rozszerzającą (`references/r
 ### F8. Zapis
 - **Relacja, log, rejestr pism, zgłoszenia, pytania otwarte, wersje:** repozytorium `elconcept/legal`,
   `relacje/<autor-slug>/`, z odczytem potwierdzającym (`references/relacje-repo.md`). Nie w katalogu sprawy ani w claude.ai.
-- **Pismo:** wersje `drafty/<pismo>/rrrrMMdd_hhmm_<nazwa>_vN.md` (tylko MD) i jeden DOCX `output/<nazwa>.docx` bez daty,
-  `_vN` i placeholderów, w cyklu przyjęcie zmian → snapshot → redline (`references/artefakty-i-wersje.md`,
-  `references/format-pisma.md`, `scripts/wersja_pisma.py`). Inny układ katalogów w `AGENTS.md` repo `legal` ma pierwszeństwo.
+- **Pismo:** źródło `drafty/<pismo>/rrrrMMdd_hhmm_<nazwa>_vN.md` (tylko MD) i folder `output/<nazwa>/` z wersjami
+  `<nazwa>_vN.docx`; każda sesja zmian = nowa wersja bez zmian śledzonych i bez placeholderów
+  (`references/artefakty-i-wersje.md`, `references/format-pisma.md`, `scripts/wersja_pisma.py`). Po zapisie wersji
+  uruchom kontrole mechaniczne (`references/bramka-redakcji.md`). Inny układ katalogów w `AGENTS.md` repo `legal`
+  ma pierwszeństwo.
 - **Pliki inkrementalne pisma:** `_PRZEBIEGI.md`, `_MAPA_KRZYWD.md`, `_HARDGATE.md`; jednorazowe w `_robocze/`.
   Pismo złożone (podpisany PDF + potwierdzenie nadania) trafia do dowodów.
 - Fakty z relacji bez dokumentu zapisuj w briefie sprawy jako niepotwierdzone dokumentem; w samym zawiadomieniu tej
@@ -174,7 +188,7 @@ Konkretne korekty błędów z testów i sesji (szczegóły iteracji: `LOG.md`):
 - **Lista przepisów tylko ze zweryfikowanych na datę czynu.** Katalog z `references/mapa-krzywd.md` jest punktem wyjścia,
   nie źródłem. Brak weryfikacji: opisz rodzaj czynu, nie wpisuj numerów „na próbę”; nie blokuje to pisma.
 - **Pismo oddawane autorowi nie ma placeholderów.** Niepewną daną formalną wpisz w wersji najbardziej prawdopodobnej
-  i dopytaj; luk faktów nie zapełniaj domysłem. DOCX wygenerowany od nowa z MD nie jest redline.
+  i dopytaj; luk faktów nie zapełniaj domysłem. Nową wersję buduj na najnowszym DOCX z poprawkami autora, nie przez ponowny render starszego MD.
 - **Zdarzenia z udziałem policjantów:** rozważ prokuraturę zamiast jednostki, której dotyczy sprawa; decyzja należy do autora.
 - **Brak dostępu do `elconcept/legal`:** nie wymyślaj zawartości relacji; oznacz `NIEZAPISANE` i podaj Markdown do zapisania.
 - **Nic nie wysyłaj organom samodzielnie** i nie obiecuj skuteczności zwykłego e-maila; wskaż zweryfikowaną drogę złożenia.
@@ -183,6 +197,8 @@ Konkretne korekty błędów z testów i sesji (szczegóły iteracji: `LOG.md`):
 
 | Plik | Kiedy czytać |
 |---|---|
+| `references/wsparcie-trauma-informed.md` | zawsze na początku rozmowy i przy każdym nowym epizodzie |
+| `references/bramka-redakcji.md` | F7/F8: kontrole mechaniczne i obsługa zarzutów do pisma |
 | `references/relacje-repo.md` | zawsze: dostęp do `elconcept/legal`, pliki `relacje/<autor-slug>/`, kolejność zapisu, awaria, migracja |
 | `references/ciaglosc-sesji.md` | zawsze: wejście, zapis, wznowienie, wersje pism, dobór pism |
 | `references/zgloszenia.md` | zawsze przy wejściu i gdy zmienia się status złożenia, sygnatura lub etap; odcięcie przed sądem |
@@ -197,10 +213,11 @@ Konkretne korekty błędów z testów i sesji (szczegóły iteracji: `LOG.md`):
 | `references/tekst-jednolity.md` | przed każdym dosłownym cytatem przepisu |
 | `references/recenzja-rozszerzajaca.md` | na wyraźne życzenie autora: recenzja rozszerzająca relację |
 | `references/po-odmowie-i-sad.md` | po odmowie, umorzeniu i gdy sprawa jest przed sądem |
-| `references/artefakty-i-wersje.md`, `references/format-pisma.md` | F8: wersje pism, redline, wygląd DOCX |
+| `references/artefakty-i-wersje.md`, `references/format-pisma.md` | F8: wersje pism DOCX `_vN`, wygląd DOCX |
 | `references/research.md` | rozwój skilla: pochodzenie reguł |
 | `assets/szablon.md` | F6 |
 | `scripts/rejestr_relacji.py` | pomocnicze wyszukanie relacji w F4, tylko w repo `legal` |
-| `scripts/wersja_pisma.py`, `scripts/render_pismo.py` | F8: nowe pismo, snapshot, redline, kontrola `output/` |
+| `scripts/lint_pisma.py`, `scripts/retencja_pisma.py`, `scripts/pismo_tekst.py` | F7/F8: kontrola formy i retencji treści między wersjami |
+| `scripts/wersja_pisma.py`, `scripts/render_pismo.py` | F8: nowe pismo, kolejna wersja, kontrola `output/` |
 | `evals/evals.json` | rozwój skilla |
 | `LOG.md` | historia zmian, decyzje autora i szczegóły iteracji (nie czytaj w trakcie pracy nad sprawą) |
